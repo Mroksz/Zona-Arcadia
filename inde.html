@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="CSS/estilos.css">
+  <title>Zona Arcadia Red Social</title>
+</head>
+<body>
+  <header class="header">
+    <div class="left-section animate__animated animate__fadeInLeft">
+      <h1>Zona Arcadia</h1>
+    </div>
+    <div class="right-section animate__animated animate__fadeInRight">
+      <h1>Red Social</h1>
+    </div>
+  </header>
+
+  <nav class="navbar">
+    <ul>
+      <li><a href="inde.html">Inicio</a></li>
+      <li><a href="#">Perfil</a></li>
+      <li><a href="base.html">Volver</a></li>
+      <li><a href="creditos,html">creditos</a></li>
+    </ul>
+  </nav>
+  
+  <div class="create-post-btn animate__animated animate__fadeInDown">Crear Publicación</div>
+  
+
+  <div id="createPostModal" class="modal">
+    <div class="modal-content animate__animated animate__fadeIn">
+      <span class="close">&times;</span>
+      <h2>Crear Publicación</h2>
+      <label for="titulo">Título:</label>
+      <input type="text" id="titulo" placeholder="Escribe el título">
+      <label for="descripcion">Descripción:</label>
+      <textarea id="descripcion" placeholder="Escribe la descripción"></textarea>
+      <label for="imagenPublicacion">Imagen:</label>
+      <input type="file" id="imagenPublicacion" accept="image/*">
+      <button id="publicarBtn">Publicar</button>
+    </div>
+  </div>
+
+  <div id="publicacionesContainer" class="publicaciones-container"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
