@@ -1,0 +1,204 @@
+body {
+    background-color: #f0f0f0; /* Color de fondo */
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+  }
+  
+  .header {
+    background-color: #000; /* Barra de color negro */
+    color: #fff; /* Texto blanco */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+  }
+  
+  .left-section, .right-section {
+    display: flex;
+    align-items: center;
+  }
+  
+  h1 {
+    margin: 0;
+    font-size: 1.5em;
+  }
+  
+  .navbar {
+    background-color: #000; /* Barra de color negro */
+    color: #fff; /* Texto blanco */
+    padding: 10px;
+  }
+  
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  li {
+    margin-right: 20px;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #fff; /* Texto blanco */
+    font-weight: bold;
+    font-size: 1.2em;
+  }
+  
+  .create-post-btn {
+    background-color: #000; /* Botón de color negro */
+    color: #fff; /* Texto blanco */
+    padding: 10px 20px;
+    margin: 20px;
+    cursor: pointer;
+    border: 2px solid #9c27b0; /* Border de apple */
+    border-radius: 10px;
+    display: inline-block;
+  }
+  
+  .modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+  }
+  
+  .modal-content {
+    background-color: #fff;
+    padding: 20px;
+    border: 2px solid #9c27b0; /* Border de apple */
+    border-radius: 10px;
+  }
+  
+  .close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 1.2em;
+    color: #9c27b0; /* Color morado elegante */
+  }
+  
+  #publicacionesContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+  }
+  
+  .publicacion {
+    background-color: #ba68c8; /* Morado claro para las publicaciones */
+    border: 2px solid #9c27b0; /* Border de apple */
+    border-radius: 10px;
+    margin: 10px;
+    padding: 20px;
+    max-width: 300px;
+  }
+  
+  .likes-dislikes {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+  }
+  
+  .like-btn, .dislike-btn, .comentar-btn {
+    background-color: #fff; /* Fondo blanco */
+    border: 2px solid #9c27b0; /* Border de apple */
+    color: #9c27b0; /* Color morado elegante */
+    padding: 5px 10px;
+    margin-top: 10px;
+    cursor: pointer;
+  }
+  
+  .like-btn:hover, .dislike-btn:hover, .comentar-btn:hover {
+    background-color: #9c27b0; /* Fondo morado elegante en hover */
+    color: #fff; /* Texto blanco en hover */
+  }
+  
+  .animate__animated {
+    animation-duration: 1s;
+  }
+  
+  .animate__fadeInLeft {
+    animation-name: fadeInLeft;
+  }
+  
+  .animate__fadeInRight {
+    animation-name: fadeInRight;
+  }
+  
+  .animate__fadeInDown {
+    animation-name: fadeInDown;
+  }
+  
+  @keyframes fadeInLeft {
+    from {
+      opacity: 0;
+      transform: translateX(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes fadeInRight {
+    from {
+      opacity: 0;
+      transform: translateX(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes fadeInDown {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  /* ... (Código anterior) ... */
+
+#publicacionesContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Alinea las publicaciones a la izquierda */
+    padding: 20px;
+  }
+  
+  .publicacion {
+    background-color: #ba68c8;
+    border: 2px solid #9c27b0;
+    border-radius: 10px;
+    margin: 10px 0; /* Ajusta el margen superior e inferior */
+    padding: 20px;
+    width: 100%; /* Asegura que las publicaciones ocupen el ancho completo del contenedor */
+    box-sizing: border-box; /* Incluye el padding en el ancho total */
+  }
+  
+  .imagenPublicacion {
+    max-width: 100%; /* Ajusta el tamaño máximo de la imagen */
+    height: auto;
+  }
+  
+  /* ... (Código anterior) ... */
+  
+.imagen-principal {
+	width: 100%;
+	margin: 0;
+}

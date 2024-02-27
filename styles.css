@@ -1,0 +1,171 @@
+body {
+  background-color: #8B66da;
+  color: #fff;
+  font-family: Arial, sans-serif;
+}
+
+header {
+	background-color: black;
+	color: #fff;
+	padding: none;
+}
+
+h1 {
+  color: #fff;
+  font-size: 2em;
+  margin: 0;
+}
+
+nav {
+background-color: #000;
+color: #fff;
+padding: 10px;
+}
+
+
+nav a {
+  color: white;
+  text-decoration:none ;
+  margin: 0 20px;
+  border-radius: 15px;
+}
+
+nav a:hover {
+  color: #ccc;
+}
+
+#inicio {
+  text-align: center;
+}
+
+#inicio img {
+  width: 100%;
+  margin: 0 auto;
+}
+ 
+#inicio h2 {
+  margin-top: 20px;   
+}
+
+#inicio p {
+  margin: 10px 20px;
+}
+
+.boton {
+  background-color: #000;
+  color: #fff;
+  padding: 10px 20px;
+  border: 1px solid #fff;
+  text-decoration: none;
+  margin: 20px auto;
+  border-radius: 15px;
+}
+
+.boton:hover {
+  background-color: #ccc;
+  color: #000;
+}
+
+/* Animaciones */
+
+h1 {
+  animation: titulo 2s infinite;
+}
+
+@keyframes titulo {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(10px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.juegos {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin: 20px;
+}
+
+.info-juego {
+	flex: 1;
+	margin-left: 20px;
+	
+}
+
+.juego-nombre {
+	font-size: 18px;
+	color: purple;
+	transition: transform 0.3s
+}
+
+.juego-nombre:hover {
+	transform: scale(1.1);
+	
+}
+
+.jugar-boton {
+	background-color: #4CAF50;
+	color: white;
+	padding: 10px 15px;
+	font-size: 17px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: background-color 0.3s ease-in-out;
+	text-decoration: none;
+	display: inline-block;
+}
+
+.jugar-boton:hover {
+	background-color: #45a049;
+	
+}
+
+.linea-divisoria {
+	margin: 20px;
+	border-top: 1px solid #ccc;
+}
+
+.juego-imagen {
+	max-width: 200px;
+	border: 2px solid #ccc;
+	border-radius: 10px;
+}
+
+.jugar-boton a {
+	color: white;
+	text-decoration: none;
+}
+
+.jugar-boton:hover a {
+	color: white;
+}
+
+.navbar {
+  background-color: #1a237e; /* Barra de color morado */
+  color: #fff;
+  padding: 10px;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+li {
+  margin-right: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.2em;
+}
